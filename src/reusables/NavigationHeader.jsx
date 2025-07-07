@@ -54,7 +54,7 @@ const NavigationHeader = () => {
       {(burgerMenuOpen || animateClose) && (
         <MobileHeader onClose={handleToggleMenu} isClosing={animateClose}/>
       )}
-    </header>
+f    </header>
   );
 };
 

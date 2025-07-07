@@ -38,14 +38,14 @@
             Heading Styles
             ============== */
             --ff-weight-heading: 800;
-            --ff-size-heading: 20px;
+            --ff-size-heading: 190px;
             --ff-size-heading-tab: 15px;
 
         /* ===============
             SubHeading Styles
             ============== */
             --ff-weight-subheading: 700;
-            --ff-size-subheading: 15px;
+            --ff-size-subheading: 30px;
             --ff-size-subheading-tab: 10px;
 
         /* ===============
@@ -53,14 +53,14 @@
             ============== */
             --ff-weight-body: 500;
             --ff-weight-bodyii: 400;
-            --ff-size-body: 35px;
+            --ff-size-body: 10px;
 
         /* ===============
             Buttons Styles
             ============== */
             --ff-weight-buttons: 700;
             --ff-weight-buttonsii: 500;
-            --ff-size-buttons: 25px;
+            --ff-size-buttons: 20px;
 
         /* ===============
             Buttons Styles
@@ -103,7 +103,6 @@
     left: 0;
     width: 100%;
     z-index: 50;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding-block: 2rem;
     background-color: var(--background-col-org);
 }
@@ -125,13 +124,64 @@
 }
 
 .nav_btns {
-    font-size: var(--ff-size-heading);
+    font-size: var(--ff-size-buttons);
     text-decoration: none;
     color: var(--buttons-col-org);
     font-family: var(--font-nunito);
     text-transform: uppercase;
 }
 /*#endregion Header */
+
+/*#region Hero Page */
+.hero_heading {
+    font-family: var(--font-montserrat);
+    font-weight: var(--ff-weight-heading);
+    font-size: var(--ff-size-heading);
+    color: var(--textII-col-org);
+    text-align: center;
+}
+
+.hero_subHead {
+    font-family: var(--font-nunito);
+    font-weight: var(--ff-weight-subheading);
+    font-size: var(--ff-size-subheading);
+    color: var(--textII-col-org);
+    text-align: center;
+    z-index: 50;
+}
+
+.img_hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -46%);
+    width: 780px;
+    height: 780px;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.hero_foot {
+    padding-inline: 4rem;
+    padding-block: 2rem;
+}
+
+.hero_foot_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: between;
+    gap: 10rem;
+}
+
+.hero_nav {
+    font-size: var(--ff-size-buttons);
+    text-decoration: none;
+    color: var(--buttons-col-org);
+    font-family: var(--font-nunito);
+    text-transform: uppercase;
+}
+
+/*#endregion Hero Page */
 
 
 /*#region User Friendly */
@@ -209,7 +259,7 @@
     }
 
     .mob_btns {
-        font-size: var(--ff-size-heading);
+        font-size: var(--ff-size-buttons);
         text-decoration: none;
         color: var(--buttons-col-org);
         font-family: var(--font-nunito);

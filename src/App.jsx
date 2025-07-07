@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavigationHeader from './reusables/NavigationHeader';
 import Home from './pages/Home';
+import NavigationHeader from './reusables/NavigationHeader';
 import './index.css'
 
 
